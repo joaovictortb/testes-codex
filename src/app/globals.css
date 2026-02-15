@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-[#4f73f2] font-sans text-slate-900 antialiased;
+}
+
+.auth-gradient {
+  background: radial-gradient(circle at top left, #f57f5f, #ef4ea7 55%, #4f73f2);
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+
+@media (max-width: 1024px) {
+  .panel-grid {
+    grid-template-columns: 1fr;
+  }
+}
